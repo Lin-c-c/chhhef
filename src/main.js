@@ -5,10 +5,11 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
+import Varlet from '@varlet/ui'
 
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
-
+app.use(Varlet).mount('#app')
 app.mount('#app')

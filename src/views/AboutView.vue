@@ -4,7 +4,7 @@ export default {
   data() {
     return {
       count1: 0,
-      count2: 99, //别一直戳会变成负数的qwq
+      count2: 99, 
       count3: 66
     }
   },
@@ -31,7 +31,12 @@ export default {
 <template>
   <div class="about">
     <button @click="increment">王老师戳了我{{ count1 }}下，剩余{{ count2 }}下</button>
+    <br>
     <button @click="decrease">这个点一下会-1:{{ count3 }}</button>
+    <var-space :size="[10, 10]">
+    <var-button text outline type="primary">外边框按钮</var-button>
+    <var-button text type="primary">纯文字按钮</var-button>
+  </var-space>
   </div>
 </template>
 
@@ -44,3 +49,4 @@ export default {
   }
 }
 </style>
+
