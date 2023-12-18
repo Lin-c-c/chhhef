@@ -11,5 +11,5 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
-app.use(Varlet).mount('#app')
+app.use(Varlet)
 app.mount('#app')
